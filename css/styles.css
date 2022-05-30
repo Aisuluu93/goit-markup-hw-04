@@ -38,7 +38,6 @@ img {
 }
 .section {
     padding-bottom: 94px;
-    padding-top: 94px;
 }
 
 /* header */
@@ -129,7 +128,7 @@ img {
     margin-left: auto;
     background-repeat: no-repeat;
     background-position: center;
-    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/images/banner.jpg');
+    background-size: cover;
 }
 
 .hero .title{
@@ -297,6 +296,7 @@ img {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    padding-top: 50px;
 }
 .project-btn .item{
     margin-right: 8px;
