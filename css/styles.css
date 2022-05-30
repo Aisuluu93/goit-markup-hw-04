@@ -12,6 +12,7 @@
     --line-color: #ECECEC;
     --project-color: #EEEEEE;
     --hero-background: #C4C4C4;
+    --social-logo: #AFB1B8;
 }
 body {
     background-color: var(--button-color);
@@ -262,6 +263,7 @@ img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
+
 .team-member{
     margin-bottom: 10px;
     color: var(--title-text-color);
@@ -275,6 +277,24 @@ img {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+}
+.social-list{
+    padding-left: 0;
+}
+.social-list .team-link {
+    display: flex;
+    text-align: center;
+    background-color: var(--button-color);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    fill: var(--social-logo);
+}
+
+.social-list .team-link:hover,
+.social-list .team-link:focus {
+    background-color: var(--accent-color);
+    fill: var(--button-color);
 }
 
 
@@ -414,4 +434,32 @@ img {
 .footer-contact .link:hover,
 .footer-contact .link:focus {
     color: var(--accent-color);
+}
+.join{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--button-color);
+}
+.social-list{
+    display: flex;
+    list-style: none;
+}
+
+.social-list .item-link{
+    display: flex;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+}
+.social-list .item-link:hover,
+.social-list .item-link:focus{
+    background-color: var(--accent-color);
 }
