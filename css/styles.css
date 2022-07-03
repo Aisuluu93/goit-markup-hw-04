@@ -116,6 +116,14 @@ img {
 .contact-info .link:hover{
     color: var(--accent-color);
 }
+.contact-info .link::before{
+    content: "";
+    height: 16px;
+    width: 12px;
+    margin-right: 10px;
+    background-image: url(../images/sprite.svg#envelope);
+    background-size: contain;
+}
 
 /* hero */
 .hero{
@@ -127,6 +135,7 @@ img {
     min-height: 600px;
     margin-right: auto;
     margin-left: auto;
+    background-image: linear-gradient(to right, #2F303A 40%), url(../images/banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -296,7 +305,13 @@ img {
     background-color: var(--accent-color);
     fill: var(--button-color);
 }
-
+.instagram-logo,
+.twitter-logo,
+.facebook-logo,
+.linkedin-logo{
+    height: 20px;
+    width: 20px;
+}
 
 /* projects */
 .all-projects{
